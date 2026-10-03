@@ -1,0 +1,11 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.ecomhubtheme.com	TRUE	/	FALSE	1999999999	_shopify_essential	:AaD_gRQHAAEABZJNR5k8wAIZaKBo3w2eXhRAQDQDPkQeyKJOUlsR80Vb9M-LR4Ssw6_K53IKN98a5pIP8-EFyJNTy6I:
+www.ecomhubtheme.com	TRUE	/	FALSE	1999999999	_shopify_analytics	:AaD_gRQzAAEAalBBZiy6cvmxUoh6YRTA2J2Nn5ZO0FivGTX75dg5j-cKNGb7CgTB1U4swO5njKP2RVvctQwv8a1z8mk:
+www.ecomhubtheme.com	TRUE	/	FALSE	1999999999	_shopify_marketing	:AaD_gRQ0AAEA__zqZdC1pK6b4eG9a-vlnJP6oGG4W-VrpCHfaHFLyUWD0nrWhvv_Po8iNSj9J1Qz4WMM2JNMC9W5e1w:
+www.ecomhubtheme.com	TRUE	/	FALSE	1999999999	Priority	High
+www.ecomhubtheme.com	TRUE	/	FALSE	1999999999	localization	US
+www.ecomhubtheme.com	TRUE	/	FALSE	1999999999	cart	hWNHWiY8u4ph4JnzNldT8pkY%3Fkey%3D9b3ce197ba911887b4e8039daf85f9c4
+www.ecomhubtheme.com	TRUE	/	FALSE	1999999999	cart_currency	USD
+www.ecomhubtheme.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+

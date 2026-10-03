@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://www.ecomhubtheme.com/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://www.ecomhubtheme.com/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://www.ecomhubtheme.com/collections/all.atom"/>
+  <title>EcomHub™</title>
+  <updated>2026-09-26T21:48:11-05:00</updated>
+  <author>
+    <name>EcomHub™</name>
+  </author>
+  <entry>
+    <id>https://www.ecomhubtheme.com/products/10616867782840</id>
+    <published>2026-09-26T21:48:11-05:00</published>
+    <updated>2026-09-26T21:48:11-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.ecomhubtheme.com/products/1-on-1-store-launch-customization"/>
+    <title>1 ON 1 Store Launch + Customization</title>
+    <s:type></s:type>
+    <s:vendor>EcomHub™</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0771/6205/3816/files/12123232305.png?v=1790477274"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>EcomHub™<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            197.99
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.ecomhubtheme.com/products/10616867782840</id>
+      <title>Default Title</title>
+      <s:price currency="USD">197.99</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.ecomhubtheme.com/products/10605325385912</id>
+    <published>2026-09-21T17:46:42-05:00</published>
+    <updated>2026-09-21T17:46:42-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.ecomhubtheme.com/products/free-dropshipping-guide-for-discord"/>
+    <title>FREE Dropshipping Guide for Discord</title>
+    <s:type></s:type>
+    <s:vendor>EcomHub™</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0771/6205/3816/files/6f482e4c-3990-4be3-bf83-569083c3b95d.png?v=1790030871"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>EcomHub™<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            0.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.ecomhubtheme.com/products/10605325385912</id>
+      <title>Default Title</title>
+      <s:price currency="USD">0.00</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.ecomhubtheme.com/products/10599843233976</id>
+    <published>2026-09-18T14:23:35-05:00</published>
+    <updated>2026-09-18T14:23:35-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.ecomhubtheme.com/products/free-dropshipping-guide"/>
+    <title>FREE Dropshipping Guide</title>
+    <s:type></s:type>
+    <s:vendor>EcomHub™</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0771/6205/3816/files/Untitled_design_469.png?v=1789761435"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>EcomHub™<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            0.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.ecomhubtheme.com/products/10599843233976</id>
+      <title>Default Title</title>
+      <s:price currency="USD">0.00</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.ecomhubtheme.com/products/10584663130296</id>
+    <published>2026-09-13T21:50:07-05:00</published>
+    <updated>2026-09-13T21:50:07-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.ecomhubtheme.com/products/winning-ad-creatives"/>
+    <title>Winning Ad Creatives</title>
+    <s:type></s:type>
+    <s:vendor>EcomHub Theme™</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0771/6205/3816/files/1_d6252691-b528-4988-ab49-8f322f465031.png?v=1789354297"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>EcomHub Theme™<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            3.99 - 9.99
+            <a href="https://www.ecomhubtheme.com/products/winning-ad-creatives">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.ecomhubtheme.com/products/10584663130296</id>
+      <title>5 Ad Creatives</title>
+      <s:price currency="USD">3.99</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.ecomhubtheme.com/products/10584663130296</id>
+      <title>10 Ad Creatives</title>
+      <s:price currency="USD">7.99</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.ecomhubtheme.com/products/10584663130296</id>
+      <title>15 Ad Creatives</title>
+      <s:price currency="USD">9.99</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.ecomhubtheme.com/products/10583964188856</id>
+    <published>2026-09-13T13:22:04-05:00</published>
+    <updated>2026-09-13T13:22:04-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.ecomhubtheme.com/products/winning-dropshipping-products"/>
+    <title>Winning Dropshipping Products</title>
+    <s:type></s:type>
+    <s:vendor>EcomHub Theme™</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0771/6205/3816/files/1_b01adf52-299f-4d09-afc2-35a69b11aa00.png?v=1789354426"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>EcomHub Theme™<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            4.99 - 19.99
+            <a href="https://www.ecomhubtheme.com/products/winning-dropshipping-products">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.ecomhubtheme.com/products/10583964188856</id>
+      <title>5 Winning Products</title>
+      <s:price currency="USD">4.99</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.ecomhubtheme.com/products/10583964188856</id>
+      <title>25 Winning Products</title>
+      <s:price currency="USD">14.99</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.ecomhubtheme.com/products/10583964188856</id>
+      <title>50 Winning Products</title>
+      <s:price currency="USD">19.99</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.ecomhubtheme.com/products/10517469266104</id>
+    <published>2026-08-08T09:42:28-05:00</published>
+    <updated>2026-08-08T09:42:28-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.ecomhubtheme.com/products/monthly-updates"/>
+    <title>Monthly Theme Updates</title>
+    <s:type></s:type>
+    <s:vendor>EcomHub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0771/6205/3816/files/Untitled_design_452.png?v=1787843941"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>EcomHub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            19.99
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.ecomhubtheme.com/products/10517469266104</id>
+      <title>Default Title</title>
+      <s:price currency="USD">19.99</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.ecomhubtheme.com/products/10517469003960</id>
+    <published>2026-08-08T09:38:05-05:00</published>
+    <updated>2026-08-08T09:38:05-05:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.ecomhubtheme.com/products/ecomhub-pro-dropshipping-store"/>
+    <title>EcomHub PRO Dropshipping Store®</title>
+    <s:type></s:type>
+    <s:vendor>EcomHub</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0771/6205/3816/files/STORES.png?v=1790629643"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>EcomHub<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            29.97 - 79.97
+            <a href="https://www.ecomhubtheme.com/products/ecomhub-pro-dropshipping-store">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.ecomhubtheme.com/products/10517469003960</id>
+      <title>Starter Store</title>
+      <s:price currency="USD">29.97</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.ecomhubtheme.com/products/10517469003960</id>
+      <title>Growth Store</title>
+      <s:price currency="USD">49.97</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://www.ecomhubtheme.com/products/10517469003960</id>
+      <title>Ultimate Store</title>
+      <s:price currency="USD">79.97</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+</feed>

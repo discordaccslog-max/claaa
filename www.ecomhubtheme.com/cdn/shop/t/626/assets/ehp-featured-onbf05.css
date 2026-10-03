@@ -1,0 +1,398 @@
+/** Shopify CDN: Minification failed
+
+Line 234:9 Unexpected "@media"
+
+**/
+/* EcomHub Pro — Facebook Comment Carousel
+   Reuses the FB card + button + glass styling from ehp-fb-ticker.css.
+   Owns the carousel layout, slider track, arrows and dots.
+   Dots & arrows auto-adapt to the section background so they stay visible. */
+
+.ehp-fon {
+  position: relative;
+  padding: var(--ehp-fon-pt) var(--ehp-fon-ph) var(--ehp-fon-pb);
+  --ehp-fon-fs: var(--ehp-fon-fs-d);
+}
+@media screen and (max-width: 749px) {
+  .ehp-fon {
+    padding: var(--ehp-fon-pt-m) var(--ehp-fon-ph-m) var(--ehp-fon-pb-m);
+    --ehp-fon-fs: var(--ehp-fon-fs-m);
+  }
+}
+
+.ehp-fon__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.ehp-fon__wrap {
+  position: relative;
+  z-index: 1;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.ehp-fon--full .ehp-fon__wrap { max-width: none; }
+
+/* content always sits above the columns */
+.ehp-fon__content { min-width: 0; margin-bottom: 2rem; }
+.ehp-fon--no-content .ehp-fon__content { display: none; }
+@media screen and (min-width: 750px) {
+  .ehp-fon--content-mobile .ehp-fon__content { display: none; }
+}
+@media screen and (max-width: 749px) {
+  .ehp-fon--content-desktop .ehp-fon__content { display: none; }
+}
+.ehp-fon__heading { margin-top: 0; }
+
+/* ---- slider ------------------------------------------------------------- */
+.ehp-fon__slider { position: relative; min-width: 0; }
+.ehp-fon__stage { position: relative; }
+.ehp-fon__viewport { overflow: hidden; touch-action: pan-y; }
+.ehp-fon__track {
+  display: flex;
+  gap: var(--ehp-fon-gap);
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+.ehp-fon__slide {
+  flex: 0 0 calc((100% - (var(--ehp-fon-cols) - 1) * var(--ehp-fon-gap) - var(--ehp-fon-peek)) / var(--ehp-fon-cols));
+  min-width: 0;
+}
+@media screen and (max-width: 749px) {
+  .ehp-fon__track { gap: var(--ehp-fon-gap-m); }
+  .ehp-fon__slide {
+    flex-basis: calc((100% - (var(--ehp-fon-cols-m) - 1) * var(--ehp-fon-gap-m) - var(--ehp-fon-peek-m)) / var(--ehp-fon-cols-m));
+  }
+}
+.ehp-fon__grabbing .ehp-fon__track { transition: none; cursor: grabbing; }
+
+/* comment background panel */
+.ehp-fon__container--glass {
+  background: color-mix(in srgb, var(--ehp-fon-cont-color, rgb(var(--color-foreground))) var(--ehp-fon-cont-ga, 15%), transparent);
+  -webkit-backdrop-filter: blur(12px) saturate(1.3);
+  backdrop-filter: blur(12px) saturate(1.3);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, rgb(var(--color-foreground)) 14%, transparent);
+}
+
+/* static grids (slider disabled for that breakpoint) */
+@media screen and (min-width: 750px) {
+  .ehp-fon--static-d .ehp-fon__track {
+    flex-wrap: wrap;
+    transform: none !important;
+    transition: none;
+    row-gap: var(--ehp-fon-gap);
+  }
+  .ehp-fon--static-d .ehp-fon__arrow--side { display: none !important; }
+}
+@media screen and (max-width: 749px) {
+  .ehp-fon--static-m .ehp-fon__track {
+    flex-wrap: wrap;
+    transform: none !important;
+    transition: none;
+    row-gap: var(--ehp-fon-gap-m);
+  }
+  .ehp-fon--static-m .ehp-fon__arrow--side { display: none !important; }
+}
+
+/* ---- arrows ------------------------------------------------------------- */
+.ehp-fon__arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--ehp-fon-arrows, rgb(var(--color-foreground)));
+  background: transparent;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.18s ease, opacity 0.18s ease;
+}
+.ehp-fon__arrow svg { width: 19px; height: 19px; display: block; }
+.ehp-fon__arrow:hover { transform: scale(1.08); }
+.ehp-fon__arrow:active { transform: scale(0.95); }
+.ehp-fon__arrow[disabled] { opacity: 0.28; cursor: default; }
+.ehp-fon__arrow[disabled]:hover { transform: none; }
+
+.ehp-fon__arrow--side {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  display: none;
+}
+.ehp-fon__arrow--side.ehp-fon__arrow--prev { left: 6px; }
+.ehp-fon__arrow--side.ehp-fon__arrow--next { right: 6px; }
+.ehp-fon__arrow--side:hover { transform: translateY(-50%) scale(1.08); }
+.ehp-fon__arrow--side:active { transform: translateY(-50%) scale(0.95); }
+.ehp-fon__arrow--under { display: none; }
+
+@media screen and (min-width: 750px) {
+  .ehp-fon--darrows-sides .ehp-fon__arrow--side { display: inline-flex; }
+  .ehp-fon--darrows-under .ehp-fon__arrow--under { display: inline-flex; }
+}
+@media screen and (max-width: 749px) {
+  .ehp-fon--marrows-sides .ehp-fon__arrow--side { display: inline-flex; }
+  .ehp-fon--marrows-under .ehp-fon__arrow--under { display: inline-flex; }
+}
+
+/* arrow backgrounds (glyph auto-contrasts each) */
+.ehp-fon--abg-custom .ehp-fon__arrow { background: var(--ehp-fon-abg, #fff); }
+.ehp-fon--abg-transparent .ehp-fon__arrow:hover {
+  background: color-mix(in srgb, rgb(var(--color-foreground)) 8%, transparent);
+}
+.ehp-fon--abg-glass .ehp-fon__arrow {
+  color: var(--ehp-fon-arrows, rgb(var(--color-background)));
+  background: color-mix(in srgb, var(--ehp-fon-abg-color, rgb(var(--color-foreground))) var(--ehp-fon-abg-ga, 80%), transparent);
+  -webkit-backdrop-filter: blur(8px) saturate(1.4);
+  backdrop-filter: blur(8px) saturate(1.4);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, rgb(var(--color-foreground)) 22%, transparent);
+}
+
+/* ---- dots --------------------------------------------------------------- */
+.ehp-fon__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+.ehp-fon__dots {
+  display: none;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* ⚠️⚠️⚠️ THE DOT'S BOX NEVER CHANGES SIZE — THE VISIBLE PILL IS ::after.
+   Animating `width` on the dot itself RE-LAID-OUT THE WHOLE ROW on every step:
+   the row is centred, so as the active pill grew from 8px to 22px every other
+   dot slid sideways, and mid-transition the spacing between them collapsed —
+   measured off Joe's screenshot as three dots touching with 0px gap instead of
+   7px, reading as a bright square wedged between two circles.
+   The box is now a constant 22px slot (the widest the pill ever gets), so the
+   row's geometry is FIXED and the gaps can never move. Only the ::after inside
+   each slot animates, and it cannot affect layout. */
+.ehp-fon__dot {
+  width: 22px;
+  height: 8px;
+  flex: 0 0 auto;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: relative;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.ehp-fon__dot::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 8px;
+  transform: translateX(-50%);
+  border-radius: 99px;
+  background: rgb(var(--color-foreground));
+  opacity: 0.4;
+  transition: width 0.18s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.18s ease;
+}
+.ehp-fon__dot:hover::after { opacity: 0.75; }
+.ehp-fon__dot.is-active::after { opacity: 1; width: 22px; }
+
+.ehp-fon--dots-custom .ehp-fon__dot::after { background: var(--ehp-fon-dots, #1c1c1c); }
+
+@media screen and (min-width: 750px) {
+  .ehp-fon--ddots-under .ehp-fon__dots { display: flex; }
+}
+@media screen and (max-width: 749px) {
+  .ehp-fon--mdots-under .ehp-fon__dots { display: flex; }
+}
+
+/* nothing to scroll → hide nav (toggled per breakpoint by JS) */
+.ehp-fon--nonav .ehp-fon__arrow,
+.ehp-fon--nonav .ehp-fon__dots { display: none !important; }
+.ehp-fon--nonav .ehp-fon__controls { margin-top: 0; }
+
+.ehp-fon__btn-colwrap {
+  max-width: calc((100% - (var(--ehp-fon-cols) - 1) * var(--ehp-fon-gap) - var(--ehp-fon-peek)) / var(--ehp-fon-cols));
+  margin-inline: auto;
+}
+@media screen and (max-width: 749px) {
+  .ehp-fon__btn-colwrap {
+    max-width: calc((100% - (var(--ehp-fon-cols-m) - 1) * var(--ehp-fon-gap-m) - var(--ehp-fon-peek-m)) / var(--ehp-fon-cols-m));
+  }
+}
+
+/* card scales to its own column width so it never cramps at high column counts */
+.ehp-fon__slide { container-type: inline-size; }
+.ehp-fon @media screen and (max-width: 749px) {
+  }
+
+/* equal comment width — stretch the comment text block to fill its column */
+.ehp-fon--equalw .ehp-fon__track { align-items: stretch; }
+.ehp-fon--equalw .ehp-fon__slide { display: flex; flex-direction: column; }
+.ehp-fon--equalw .ehp-fon__slide > * { flex: 1 1 auto; width: 100%; box-sizing: border-box; }
+.ehp-fon--equalw 
+/* card width slider — cap each card within its column and center it */
+.ehp-fon .ehp- { max-width: var(--ehp-fon-cardw, 100%); margin-inline: auto; }
+
+/* TrustPilot rating summary (Excellent 4.7 / 5 ★) */
+.ehp-fon__rating { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0.5em; margin: 0.2em 0 1.4em; }
+.ehp-fon__rating-word { font-weight: 700; font-size: 1.15em; }
+.ehp-fon__rating-score { display: inline-flex; align-items: baseline; }
+.ehp-fon__rating-val { font-weight: 800; font-size: 1.7em; line-height: 1; }
+.ehp-fon__rating-max { font-weight: 600; font-size: 1em; opacity: 0.75; margin-left: 0.1em; }
+.ehp-fon__rating-stars { display: inline-flex; }
+.ehp-align-center .ehp-fon__rating { justify-content: center; }
+.ehp-align-left .ehp-fon__rating { justify-content: flex-start; }
+.ehp-align-right .ehp-fon__rating { justify-content: flex-end; }
+
+/* ==========================================================================
+   Featured On — section layout + logo marks
+   ========================================================================== */
+.ehp-fon {
+  padding-top: var(--fon-pt-d, 48px);
+  padding-bottom: var(--fon-pb-d, 48px);
+  background-color: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+}
+.ehp-fon--glass {
+  background: color-mix(in srgb, rgb(var(--fon-glass-tint, var(--color-foreground))) var(--fon-glass-alpha, 14%), transparent);
+  -webkit-backdrop-filter: blur(18px) saturate(1.5);
+  backdrop-filter: blur(18px) saturate(1.5);
+}
+.ehp-fon__inner {
+  max-width: var(--page-width, 1200px);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+.ehp-fon__head { text-align: center; }
+.ehp-fon__heading { margin: 0; }
+
+/* horizontal: heading on the left, logos filling the rest of the row */
+.ehp-fon__inner--horizontal {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.ehp-fon__inner--horizontal .ehp-fon__head {
+  flex: 0 0 auto;
+  max-width: 34%;
+  text-align: left;
+}
+.ehp-fon__inner--horizontal .ehp-fon__slider { flex: 1 1 auto; min-width: 0; }
+
+/* a logo slide */
+.ehp-fon__slide { display: flex; align-items: center; justify-content: center; }
+.ehp-fon__logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  opacity: var(--fon-opacity, 1);
+  color: var(--fon-logo-color, currentColor);
+  transition: opacity 0.2s ease;
+}
+a.ehp-fon__logo:hover { opacity: 1; }
+
+/* uploaded logo — height driven by the size slider, tinted when a colour is set */
+.ehp-fon__img {
+  height: var(--fon-logo, 44px);
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+/* Tinting an uploaded logo: the image itself can't be recoloured, so the wrapper
+   paints the chosen colour and uses the logo as a mask, with the <img> kept in
+   place (hidden) purely to hold the correct box size. */
+.ehp-fon[style*="--fon-logo-color"] .ehp-fon__logo[style*="--fon-src"] {
+  background-color: var(--fon-logo-color);
+  -webkit-mask-image: var(--fon-src);
+  mask-image: var(--fon-src);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+.ehp-fon[style*="--fon-logo-color"] .ehp-fon__logo[style*="--fon-src"] .ehp-fon__img {
+  visibility: hidden;
+}
+
+/* built-in wordmarks — original generic publication styles, not real brands */
+.ehp-fon__mark {
+  font-size: calc(var(--fon-logo, 44px) * 0.42);
+  line-height: 1.1;
+  white-space: nowrap;
+  color: inherit;
+}
+.ehp-fon__mark--serif { font-family: Georgia, 'Times New Roman', serif; font-weight: 700; letter-spacing: -0.01em; }
+.ehp-fon__mark--serif-caps { font-family: Georgia, 'Times New Roman', serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; }
+.ehp-fon__mark--serif-italic { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 600; }
+.ehp-fon__mark--condensed { font-weight: 800; text-transform: uppercase; letter-spacing: -0.02em; transform: scaleX(0.88); transform-origin: center; }
+.ehp-fon__mark--heavy { font-weight: 900; text-transform: uppercase; letter-spacing: -0.01em; }
+.ehp-fon__mark--airy { font-weight: 400; text-transform: uppercase; letter-spacing: 0.3em; font-size: calc(var(--fon-logo, 44px) * 0.3); }
+.ehp-fon__mark--mono { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-weight: 700; letter-spacing: -0.03em; }
+.ehp-fon__mark--split { font-weight: 400; text-transform: uppercase; letter-spacing: 0.02em; }
+.ehp-fon__mark--split b { font-weight: 900; }
+.ehp-fon__mark--boxed {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border: 2px solid currentColor;
+  padding: 0.25em 0.55em;
+  font-size: calc(var(--fon-logo, 44px) * 0.3);
+}
+
+@media screen and (max-width: 749px) {
+  .ehp-fon { padding-top: var(--fon-pt-m, 32px); padding-bottom: var(--fon-pb-m, 32px); }
+  .ehp-fon__inner--horizontal { display: block; }
+  .ehp-fon__inner--horizontal .ehp-fon__head { max-width: none; text-align: center; }
+  .ehp-fon__img { height: var(--fon-logo-m, 32px); }
+  .ehp-fon__mark { font-size: calc(var(--fon-logo-m, 32px) * 0.42); }
+  .ehp-fon__mark--airy,
+  .ehp-fon__mark--boxed { font-size: calc(var(--fon-logo-m, 32px) * 0.3); }
+}
+
+
+/* ---- pagination styles -------------------------------------------------
+   The base dot is a hardcoded pill (8px, radius 99, widening to 22 when
+   active). These five hang off a modifier on the carousel root, so the shape
+   is a merchant choice rather than baked in. Each restates BOTH the resting
+   and the active state, since the base rule widens the active one. */
+.ehp-fon--dots-pill .ehp-fon__dot::after { width: 8px; border-radius: 99px; }
+.ehp-fon--dots-pill .ehp-fon__dot.is-active::after { width: 22px; }
+
+.ehp-fon--dots-dot .ehp-fon__dot::after { width: 8px; border-radius: 50%; }
+.ehp-fon--dots-dot .ehp-fon__dot.is-active::after { width: 8px; }
+
+.ehp-fon--dots-bar .ehp-fon__dot::after { width: 18px; top: 2.5px; bottom: 2.5px; border-radius: 0; }
+.ehp-fon--dots-bar .ehp-fon__dot.is-active::after { width: 18px; }
+
+.ehp-fon--dots-square .ehp-fon__dot::after { width: 8px; border-radius: 2px; }
+.ehp-fon--dots-square .ehp-fon__dot.is-active::after { width: 8px; }
+
+/* the ring draws its edge with an inset shadow so the colour still comes from
+   the same custom property the solid styles use */
+.ehp-fon--dots-ring .ehp-fon__dot::after {
+  width: 9px;
+  top: -0.5px;
+  bottom: -0.5px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: inset 0 0 0 2px currentColor;
+  color: rgb(var(--color-foreground));
+}
+.ehp-fon--dots-ring .ehp-fon__dot.is-active::after {
+  width: 9px;
+  background: currentColor;
+}
+.ehp-fon--dots-ring.ehp-fon--dots-custom .ehp-fon__dot::after { color: var(--ehp-fon-dots, #1c1c1c); }
