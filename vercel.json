@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/www.ecomhubtheme.com/index.html",
-      "permanent": false
-    }
-  ]
-}
